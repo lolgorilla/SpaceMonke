@@ -25,9 +25,9 @@ namespace SpaceMonke
 
         private void RoomJoined(object sender, Events.RoomJoinedArgs e)
         {
-            if(e != null && e.isPrivate != null)
+            if(e != null && e.isPublic != null)
             {
-                allowSpaceMonke = e.isPrivate;
+                allowSpaceMonke = e.isPublic;
             }
         }
     }
